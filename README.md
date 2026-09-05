@@ -10,6 +10,10 @@ An AI-powered Streamlit application that transforms lengthy business PDF documen
 
 ---
 
+<img width="1506" height="917" alt="image" src="https://github.com/user-attachments/assets/8c2b5154-f2e9-4622-94ec-d4cd7db49c51" />
+
+---
+
 ## Table of Contents
 
 - [Overview](#overview)
