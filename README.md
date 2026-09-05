@@ -202,15 +202,6 @@ The app will open in your default browser at `http://localhost:8501`.
 4. **View** the AI-generated summary rendered as Markdown in the right column.
 5. **Collect** the exported PDF from your `~/Downloads` folder.
 
-### Running the Script (CLI)
-
-For quick experimentation without the web interface, use the standalone script:
-
-```bash
-python 01_document_summarization.py
-```
-
-This processes the included Nike earnings transcript and prints the summary to stdout.
 
 ---
 
@@ -219,7 +210,7 @@ This processes the included Nike earnings transcript and prints the summary to s
 ```
 PDF_Summarizer/
 │
-├── document_summarizer_app.py   # Streamlit web application (main app)
+├── document_summarizer_app.py      # Streamlit web application (main app)
 ├── credentials.yml                 # API key configuration (DO NOT COMMIT)
 ├── README.md                       # This file
 │
@@ -230,8 +221,6 @@ PDF_Summarizer/
 | File | Description |
 |---|---|
 | `document_summarizer_app.py` | Full-featured Streamlit application with PDF upload, dual summarization modes, and PDF export via Quarto. |
-| `LIBRARY_GUIDE.md` | Beginner-friendly walkthrough of every library in the project — what it does, why it's needed, and how it connects to the pipeline. |
-| `logic_flow.md` | ASCII flow diagrams documenting the application's complete call graph and data flow. |
 | `credentials.yml` | YAML file storing the OpenAI API key. Must be created locally and excluded from version control. |
 
 ---
