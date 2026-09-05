@@ -1,4 +1,4 @@
-# AI Business Document Summarizer
+# PDF Document Summarizer
 
 An AI-powered Streamlit application that transforms lengthy business PDF documents — such as earnings call transcripts — into structured, actionable summaries using OpenAI's GPT models and LangChain.
 
@@ -112,7 +112,7 @@ Ensure the following are installed on your system before proceeding:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/AI-Business-Summarization-App.git
+git clone https://github.com/<your-username>/PDF_Summarizer.git
 cd AI-Business-Summarization-App
 ```
 
@@ -187,7 +187,7 @@ export OPENAI_API_KEY="sk-proj-YOUR_API_KEY_HERE"
 Launch the interactive web application:
 
 ```bash
-streamlit run 02_document_summarizer_app.py
+streamlit run document_summarizer_app.py
 ```
 
 The app will open in your default browser at `http://localhost:8501`.
@@ -219,11 +219,8 @@ This processes the included Nike earnings transcript and prints the summary to s
 ```
 AI-Business-Summarization-App/
 │
-├── 01_document_summarization.py    # Standalone CLI summarization script
-├── 02_document_summarizer_app.py   # Streamlit web application (main app)
+├── document_summarizer_app.py   # Streamlit web application (main app)
 ├── credentials.yml                 # API key configuration (DO NOT COMMIT)
-├── LIBRARY_GUIDE.md                # Detailed guide to all libraries used
-├── logic_flow.md                   # Application logic flow with diagrams
 ├── README.md                       # This file
 │
 └── pdf/
@@ -232,8 +229,8 @@ AI-Business-Summarization-App/
 
 | File | Description |
 |---|---|
-| `01_document_summarization.py` | Minimal script demonstrating core LangChain summarization concepts — document loading, prompt templates, and chain execution. Intended as a learning entry point. |
-| `02_document_summarizer_app.py` | Full-featured Streamlit application with PDF upload, dual summarization modes, and PDF export via Quarto. |
+| 
+| `document_summarizer_app.py` | Full-featured Streamlit application with PDF upload, dual summarization modes, and PDF export via Quarto. |
 | `LIBRARY_GUIDE.md` | Beginner-friendly walkthrough of every library in the project — what it does, why it's needed, and how it connects to the pipeline. |
 | `logic_flow.md` | ASCII flow diagrams documenting the application's complete call graph and data flow. |
 | `credentials.yml` | YAML file storing the OpenAI API key. Must be created locally and excluded from version control. |
@@ -442,12 +439,3 @@ Please ensure your code follows the existing style and includes relevant documen
 
 This project is distributed under the MIT License. See [`LICENSE`](LICENSE) for details.
 
----
-
-## Acknowledgements
-
-- [Business Science University](https://www.business-science.io/) — Python for Generative AI Course
-- [LangChain](https://python.langchain.com/) — LLM application framework
-- [OpenAI](https://openai.com/) — GPT-4o-mini language model
-- [Streamlit](https://streamlit.io/) — Rapid web app prototyping
-- [Quarto](https://quarto.org/) — Scientific and technical publishing
