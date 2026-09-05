@@ -217,7 +217,7 @@ This processes the included Nike earnings transcript and prints the summary to s
 ## Project Structure
 
 ```
-AI-Business-Summarization-App/
+PDF_Summarizer/
 │
 ├── document_summarizer_app.py   # Streamlit web application (main app)
 ├── credentials.yml                 # API key configuration (DO NOT COMMIT)
@@ -229,7 +229,6 @@ AI-Business-Summarization-App/
 
 | File | Description |
 |---|---|
-| 
 | `document_summarizer_app.py` | Full-featured Streamlit application with PDF upload, dual summarization modes, and PDF export via Quarto. |
 | `LIBRARY_GUIDE.md` | Beginner-friendly walkthrough of every library in the project — what it does, why it's needed, and how it connects to the pipeline. |
 | `logic_flow.md` | ASCII flow diagrams documenting the application's complete call graph and data flow. |
